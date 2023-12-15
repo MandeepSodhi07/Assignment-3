@@ -1,0 +1,310 @@
+<!-- Your main page should go here -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Write your species name under the title -->
+	<title>  Sword Fish </title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<!-- jQuery script for fixed navigation bar  -->
+	<script>
+		$(document).ready(function() {
+			// Get the initial offset of the navigation bar
+			var navOffset = $('.header').offset().top;
+	
+			// Function to update the navigation bar position
+			function stickyNavigation() {
+				// Get the current scroll position
+				var scrollPos = $(window).scrollTop();
+	
+				// Add or remove the 'fixed' class based on scroll position
+				if (scrollPos >= navOffset) {
+					$('.header').addClass('fixed');
+				} else {
+					$('.header').removeClass('fixed');
+				}
+			}
+	
+			// Call the function on document ready and on scroll
+			stickyNavigation();
+			$(window).scroll(stickyNavigation);
+		});
+	</script>
+</head>
+
+<body>
+<!-- Header Start -->
+<header class="header">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="fish-name">
+                <!-- Write your species name under the anchor tag -->
+				<a href="index.html">Sword Fish</a>
+			</div>
+	 <div class="nav-toggle">
+	   <span></span>
+	 </div>
+			<nav class="nav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#predators">Prey & Predators</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#count">World Count</a></li>
+                    <li><a href="honesty.html">Honesty Declaration</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Header End -->
+
+<!-- Home Section Start -->
+<section class="home-section" id="home" >
+<p>The swordfish, or Xiphias gladius, is a huge, highly migrating predatory fish with a long, flat, pointed bill. 
+	In some countries, it is also referred to as the broadbill.<br>
+	 Despite being unclear, they are a well-liked sport fish of the billfish family.
+	  As they mature, swordfish lose all of their teeth and scales and have a rounded, elongated body. <br>
+	  These fish are common in tropical and temperate regions of the Atlantic, Pacific, and Indian oceans.
+	 The swordfish is a hungry torpedo that hunts squid and is equipped with a lethal blade. <br>
+	Swordfish rule their field as vicious pursue hunters thanks to an amazing range of adaptations that enable them to attain incredible predatory capability.
+	They are among the fastest fish in the world and are well-known for their amazing swimming abilities. <br>
+	To get deep and detailed information about Swordfish, you can  go to <a href="https://en.wikipedia.org/wiki/Swordfish" style="color: aquamarine;">wikipedia.com</a>
+</p>
+</section>
+<!-- Home Section End -->
+
+<!-- About Section Start -->
+<section class="about-section" id="about">
+	<h2><u>About:</u></h2>
+	Here are some key points about swordfish:
+	<ol type="1" >
+	<li>Physical Features: Swordfish have a robust tail, a streamlined body, and a pointed bill that can extend up to one-third of the fish's overall length. Their undersides are usually white, and their upper bodies are silver-blue in color.</li>
+
+	<li>Habitat: Tropical and temperate ocean waters are home to swordfish all throughout the world. They live anywhere from the surface to several hundred meters below the surface, and they are known to migrate great distances.</li>
+
+	<li>Diet and Feeding: A wide range of fish and cephalopods are the staple diet of swordfish, which are formidable predators. They strike at schools of prey with their sword-like bill, stunning or impaling them before devouring the catch.</li>
+	<li>Commercial Importance: Due to their large size and firm, tasty flesh, swordfish are highly prized in the fishing industry. Both commercial and recreational fishers hunt them, and sport anglers frequently seek them.</li>
+
+	<li>Life Cycle: Since swordfish lay eggs to reproduce, they are oviparous. The newborn swordfish go through a pelagic larval stage after hatching, followed by juvenile and adult phases.</li>
+
+	<li>Conservation Status: The conservation status of swordfish populations varies depending on the region and is affected by fishing pressure. Fishing quotas and size restrictions are two examples of management strategies that are put in place to guarantee sustainable harvesting.</li>
+	</ol>
+	
+</section>
+<!-- About Section End -->
+
+<!-- Prey & Predators Section Start -->
+<section class="predators-section" id="predators">
+	<h1><u>Prey and Predators</u></h1>
+	<h2>Prey:</h2>
+A wide range of prey is consumed by carnivorous swordfish. Typically, their diet consists of:
+<ol type="1">
+<li>Fish: The main food source for swordfish is fish, including squid, mackerel, herring, and barracuda. They are renowned for their swift swimming prowess in order to capture schools of fish.</li>
+
+<li>Squid: Squid is frequently consumed by swordfish. Before eating the squid, the fish slashes and stuns them with its sword-like bill.</li>
+
+<li>Crustaceans: Swordfish have been known to eat crab and shrimp, though this is less usual.</li> <br>
+<img src="img/squid.avif" alt="A picture of a squid" id="squid">
+<img src="img/crustacean.jpg" alt="A photo of a crustacean" id="crustacean">
+<figcaption id="squidcaption">Picture of a squid(left) and a crustacean(right)</figcaption> <br><br>
+
+
+As opportunistic hunters, swordfish are able to modify their diet in response to changes in the availability of prey in their surroundings.
+
+</ol> <br>
+
+<h2>Predators:</h2>
+Because of their size and strength, swordfish make excellent adult predators with few natural enemies. They do, however, confront some risks in the ocean:
+
+<ol type="1">
+<li>Killer whales, or orcas, have been observed to feed on swordfish, especially when the fish are young or defenseless.</li>
+<li>Sharks: Swordfish may be at danger from larger sharks, like great white sharks. But compared to some other prey species, interactions between these species are not as well-documented.</li>
+<img src="img/shark.webp" alt="Picture of a shark" id="shark">
+<Figcaption id="sharkcaption">A shark</Figcaption><br><br>
+<li>People: The main predators of swordfish are people. Swordfish's big size and exceptional meat quality make them highly sought after in both commercial and leisure fishing. Swordfish populations may be seriously threatened by overfishing and bycatch.</li>
+</ol> <br>
+
+Even though swordfish are typically found at the top of the marine food chain, their dual roles as predators and prey contribute to the ecosystem's equilibrium. In order to safeguard sustainable fishing methods and preserve these amazing animals, conservation initiatives are essential.
+</section>
+<!-- Prey & Predators Section End -->
+
+<!-- Gallery Section Start -->
+<section class="gallery-section" id="gallery">
+	<h1><u>Gallery</u></h1>
+	<img src="img/swordfish.webp" alt="A picture of a swordfish" id="img1">
+	<figcaption id="cap1">Picture of a swordfish swimming in the ocean</figcaption> <br> <br>
+
+	<div class="video-container">
+	<video controls>
+		<source src="Video/Video2.mp4" type="video/mp4" id="video1">
+		Your browser does not support the video tag.
+	  </video> 
+	</div> <br><br>
+	  
+	<img src="img/1.webp" alt="Picture of some fishermen holding swordfish " id="img2">
+	<figcaption id="cap2">Picture of some fishermen holding swordfish showing how big it is in size</figcaption> <br><br>
+
+	<div class="video-container">
+	<video controls>
+		<source src="Video/Video1.mp4" type="video/mp4" id="video2">
+		Your browser does not support the video tag.
+	  </video> <br><br>
+	</div> <br><br>
+	
+</section>
+<!-- Gallery Section End --> 
+
+
+
+	<!-- World Count Section Start -->
+<section class="count-section" id="count">
+	<h2 id="Worldcount">World Count</h2>
+ 
+	<table  id="tab">
+	   <thead>
+		  <tr>
+			 <th>Statistic</th>
+			 <th>Value</th>
+		  </tr>
+	   </thead>
+	   <tbody>
+		  <tr>
+			 <td>Habitat:</td>
+			 <td>Open Ocean </td>
+		  </tr>
+		  <tr>
+			 <td>Location:</td>
+			 <td>In every temperate and tropical region found in the Pacific, Indian, and Atlantic oceans</td>
+		  </tr>
+		  <tr>
+			 <td>Lifespan</td>
+			 <td>Atleast 16 years</td>
+		  </tr>
+		  <tr>
+			<td>Size:</td>
+			<td>Up to 4.5 metres (14ft 11 in)</td>
+		 </tr>
+		 <tr>
+			<td>Weight:</td>
+			<td>Up to 650 kilograms (1,430 lbs)</td>
+		 </tr>
+		 <tr>
+			<td>Color:</td>
+			<td>White on the undersides, deep blue on the body's upper surfaces and pectoral fins</td>
+		 </tr>
+		 <tr>
+			<td>Diet:</td>
+			<td>Pelagic squid and fish. Additionally recognized to feed on benthic fish and crustaceans</td>
+		 </tr>
+		 <tr>
+			<td>Predators:</td>
+			<td>Sometimes, orcas and shortfin mako sharks prey on adults. A variety of maritime predators hunt on juveniles because they are more susceptible to harm.
+			</td>
+		 </tr>
+		 <tr>
+			<td>Top-speed:</td>
+			<td>64 kph (40 mph)</td>
+		 </tr>
+		 <tr>
+			<td>No. of species</td>
+			<td>1</td>
+		 </tr>
+		 <tr>
+			<td>Conservation Status:</td>
+			<td>Least Concerned</td>
+	   </tbody>
+	</table>
+ </section>
+ <!-- World Count Section End -->
+<!-- Contact Form Start -->
+<h1>Contact Us</h1>
+<section class="contact-section">
+        
+	<form id="contactForm" action="https://formspree.io/f/xleyqpga" method="POST" onsubmit="sendEmail(); reset(); return false;">
+		<!-- First Name -->
+		<div class="form-group">
+			<label for="firstName">First Name:</label>
+			<input type="text" name="firstname" id="firstName" name="firstName" required minlength="5">
+		</div>
+		
+		<!-- Last Name -->
+		<div class="form-group">
+			<label for="lastName">Last Name:</label>
+			<input type="text" name="lastname" id="lastName" name="lastName" required minlength="5">
+		</div>
+		
+		<!-- Email -->
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" name="email"  id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+		</div>
+		
+		<!-- Date -->
+		<div class="form-group">
+			<label for="date">Date:</label>
+			<input type="text" name="date" id="date" name="date" placeholder="dd/mm/yy" required pattern="\d{2}\/\d{2}\/\d{2}">
+		</div>
+		
+		<!-- Phone -->
+		<div class="form-group">
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" id="phone" name="phone" required pattern="\d{10}">
+		</div>
+		
+		<!-- Message -->
+		<div class="form-group">
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required minlength="50"></textarea>
+		</div>
+		
+		<!-- Submit Button -->
+		<button type="submit">Submit</button>
+	</form>
+</section>
+
+
+<!-- Contact Form End -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	function sendEmail(){
+		Email.send({
+Host : "smtp.elasticmail.com",
+Username : "info1234@domain.com",
+Password : "7847551549CE1FF3CCFE7E5C0A1DDE93B84E",
+To : 'mandeep2932002@gmail.com',
+From : document.getElementById('email').value,
+Subject : "New Contact Form Enquiry",
+Body : "Name:" +document.getElementById("name").value
++ "<br> Email: " +document.getElementById("email").value
++ "<br> Phone no.: " +document.getElementById("phone").value
++ "<br> Message: " +document.getElementById("message").value
+}).then(
+message => alert("Message sent Successfully")
+);
+	}
+</script>
+
+<form action="https://formspree.io/f/{form_id}" method="post" ">
+<label for="email">Your Email</label>
+<input name="Email" id="email" type="email"> <br><br>
+<button type="submit">Submit</button>
+</form>
+</body>
+<!--Contact Form Ends Here-->
+  
+
+ <!-- Write your name under the para tag -->
+
+
+<p class="copyright">&copy; 2022 _______ Org.</p>
+Mandeep Sodhi <br>
+Sujal Thapar
+
+</body>
+</html>

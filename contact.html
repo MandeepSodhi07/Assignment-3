@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header header-animation">
+       <h1>CONTACT US</h1>
+    </header>
+    <!-- Contact Form Start -->
+    <section class="contact-section">
+        
+        <form id="contactForm" action="https://formspree.io/f/xleyqpga" method="POST" onsubmit="sendEmail(); reset(); return false;">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstname" id="firstName" name="firstName" required minlength="5">
+            </div>
+            
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastname" id="lastName" name="lastName" required minlength="5">
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email"  id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </div>
+            
+            <!-- Date -->
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="text" name="date" id="date" name="date" placeholder="dd/mm/yy" required pattern="\d{2}\/\d{2}\/\d{2}">
+            </div>
+            
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" name="phone" required pattern="\d{10}">
+            </div>
+            
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="50"></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- Contact Form End -->
+ 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticmail.com",
+    Username : "info1234@domain.com",
+    Password : "7847551549CE1FF3CCFE7E5C0A1DDE93B84E",
+    To : 'mandeep2932002@gmail.com',
+    From : document.getElementById('email').value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name:" +document.getElementById("name").value
+    + "<br> Email: " +document.getElementById("email").value
+    + "<br> Phone no.: " +document.getElementById("phone").value
+    + "<br> Message: " +document.getElementById("message").value
+}).then(
+  message => alert("Message sent Successfully")
+);
+        }
+    </script>
+
+<form action="https://formspree.io/f/{form_id}" method="post" ">
+    <label for="email">Your Email</label>
+    <input name="Email" id="email" type="email"> <br><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
